@@ -17,7 +17,7 @@ const dbPath = path.join(nodecgRootPath, 'db/nodecg.sqlite3');
 export const testing = process.env.NODECG_TEST?.toLowerCase() === 'true';
 
 const dataSource = new DataSource({
-	type: 'better-sqlite3',
+	type: 'sqlite',
 
 	/**
 	 * TypeORM has this special :memory: key which indicates
